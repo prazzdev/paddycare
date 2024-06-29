@@ -8,40 +8,7 @@ const DiagnoseView = () => {
   const [allGejala, setAllGejala] = useState([]);
   const [allPenyakit, setAllPenyakit] = useState([]);
   const [allTingkatKeyakinan, setAllTingkatKeyakinan] = useState([]);
-  const [answers, setAnswers] = useState({
-    G01: "0.2",
-    G03: "0.4",
-    G02: "0",
-    G04: "1",
-    G05: "0.4",
-    G06: "0.4",
-    G07: ".8",
-    G08: "1",
-    G09: "0",
-    G10: "0.2",
-    G11: "0.4",
-    G12: "0.2",
-    G13: "0.4",
-    G14: "0.4",
-    G15: "0.2",
-    G16: "0.4",
-    G17: "0.6",
-    G18: "0.2",
-    G19: "0.4",
-    G20: "0.6",
-    G21: "0.6",
-    G22: "1",
-    G23: "1",
-    G24: "0.8",
-    G25: "0.8",
-    G26: "0.2",
-    G27: "0.2",
-    G28: "1",
-    G29: "0.4",
-    G30: "0.4",
-    G31: "0.4",
-    G32: "0.8",
-  });
+  const [answers, setAnswers] = useState({});
   const [diagnosaAkhir, setDiagnosaAkhir] = useState([]);
   console.log(diagnosaAkhir);
   const [error, setError] = useState("");
