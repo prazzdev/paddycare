@@ -13,10 +13,10 @@ import { Kysely, MysqlDialect } from "kysely";
 // });
 const dialect = new MysqlDialect({
   pool: createPool({
-    database: process.env.CF_DB,
     host: process.env.CF_HOST,
     user: process.env.CF_USER,
     password: process.env.CF_PASSWORD,
+    database: process.env.CF_DB,
     port: process.env.CF_PORT,
     connectionLimit: 10,
   }),
