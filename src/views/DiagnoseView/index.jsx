@@ -33,37 +33,22 @@ const DiagnoseView = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    // const allAnswered = allGejala.every(
-    //   (gejala, id) => answers[id] && answers[id] !== ""
-    // );
-    // if (!allAnswered) {
-    //   setError("Semua pertanyaan harus dijawab.");
-    //   alert("Isi semua pertanyaan terlebih dahulu sebelum submit!");
-    //   return;
-    // }
-    // setError("");
     try {
       const hasilDiagnosa = await diagnosaPenyakit(answers);
-      console.log("Hasil diagnosa: ", hasilDiagnosa);
       const kodePenyakitDiagnosa = Object.keys(hasilDiagnosa);
-      console.log("Kode penyakit diagnosa: ", kodePenyakitDiagnosa);
-      console.log("All penyakit: ", allPenyakit);
       const hasilDiagnosaAkhir = allPenyakit
         .filter((penyakit) => {
           const result = kodePenyakitDiagnosa.includes(penyakit.kode_penyakit);
-          console.log(`Filtering ${penyakit.kode_penyakit}: ${result}`);
           return result;
         })
         .map((penyakit) => {
           const nilai_cf = parseFloat(hasilDiagnosa[penyakit.kode_penyakit]);
-          console.log(`Mapping ${penyakit.kode_penyakit}: ${nilai_cf}`);
           return {
             ...penyakit,
             nilai_cf,
           };
         })
         .sort((a, b) => b.nilai_cf - a.nilai_cf);
-      console.log(hasilDiagnosaAkhir);
       setDiagnosaAkhir(hasilDiagnosaAkhir);
     } catch (error) {
       console.error(error);
@@ -85,7 +70,7 @@ const DiagnoseView = () => {
               >
                 {/* <legend>{gejala.nama_gejala}</legend> */}
                 <label htmlFor={gejala.kode_gejala} className="mb-3 lg:mb-0">
-                  {gejala.nama_gejala} (CF {gejala.nilai_cf})
+                  {gejala.nama_gejala}
                 </label>
                 <select
                   id={gejala.kode_gejala}
@@ -130,6 +115,11 @@ const DiagnoseView = () => {
             ))}
             sehingga dapat disimpulkan bahwa tanaman padi terkena penyakit{" "}
             <b>{diagnosaAkhir[0].nama_penyakit}</b>.
+          </p>
+          <p className="text-md text-justify lg:text-xl">
+            {diagnosaAkhir[0].keterangan} {diagnosaAkhir[0].organisme_penyebab}.
+            Tindakan yang dapat dilakukan untuk pencegahan, antara lain:{" "}
+            {diagnosaAkhir[0].tindakan}
           </p>
         </div>
       )}
