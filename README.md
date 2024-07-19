@@ -1,40 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# PaddyCare - Sistem Pakar Diagnosis Penyakit Tanaman Padi
 
-## Getting Started
+![PaddyCare Logo](https://github.com/prazzdev/paddycare/blob/main/public/assets/images/paddycare.png)
 
-First, run the development server:
+## Deskripsi Proyek
+PaddyCare adalah sistem pakar yang dirancang untuk membantu petani dalam mendiagnosis penyakit pada tanaman padi. Dengan memanfaatkan metode Certainty Factor, PaddyCare memberikan analisis yang akurat dan rekomendasi tindakan yang tepat untuk mengatasi berbagai penyakit pada tanaman padi. Proyek ini bertujuan untuk meningkatkan produktivitas dan kesehatan tanaman padi dengan memberikan solusi berbasis teknologi yang mudah digunakan.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Fitur Utama
+- **Diagnosa Penyakit**: Identifikasi penyakit tanaman padi seperti Bercak Coklat, Blast, Kresek, Kerdil Rumput, Hawar Pelepah Daun, Noda/Api Palsu, dan Tungro berdasarkan gejala yang diamati.
+- **Rekomendasi Tindakan**: Memberikan saran dan tindakan yang tepat untuk mengatasi penyakit yang terdeteksi.
+- **Metode Certainty Factor**: Menggunakan pendekatan Certainty Factor untuk memberikan tingkat keyakinan dalam setiap diagnosis.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Instalasi
+Untuk menjalankan proyek ini secara lokal, ikuti langkah-langkah berikut:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+1. Clone repositori ini:
+   ```bash
+   git clone https://github.com/prazzdev/paddycare.git
+2. Masuk ke direktori proyek:
+   ```bash
+   cd paddycare
+3. Instal dependensi yang diperlukan:
+   ```bash
+   npm install
+5. Jalankan aplikasi:
+   ```bash
+   npm start
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Penggunaan
+Setelah aplikasi berjalan, Anda dapat mulai mendiagnosis penyakit pada tanaman padi dengan mengikuti langkah-langkah berikut:
+1. Masukkan nilai keyakinan pada setiap gejala yang ada pada tampilan diagnosa.
+2. Sistem akan menganalisis gejala yang dimasukkan menggunakan metode Certainty Factor.
+3. Terima hasil diagnosis beserta rekomendasi tindakan yang disarankan oleh sistem.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Lisensi
+Proyek ini dilisensikan di bawah MIT License.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Kontak
+Jika Anda memiliki pertanyaan atau saran, jangan ragu untuk menghubungi kami melalui email di [prazzid31@gmail.com].
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Terima kasih telah menggunakan PaddyCare! Harapannya sistem ini dapat membantu meningkatkan kesehatan dan produktivitas tanaman padi Anda.
