@@ -13,7 +13,7 @@ const HomeView = () => {
               Diagnosis Penyakit pada Tanaman Padi
             </span>
             <span className="text-3xl text-white dark:text-white mb-6">
-              di Banjarnegara
+              di Kecamatan Madukara
             </span>
             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
               <Link
