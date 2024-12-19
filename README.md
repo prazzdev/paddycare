@@ -38,4 +38,4 @@ Proyek ini dilisensikan di bawah MIT License.
 ## Kontak
 Jika Anda memiliki pertanyaan atau saran, jangan ragu untuk menghubungi kami melalui email di [prazzid31@gmail.com].
 
-Terima kasih telah menggunakan PaddyCare! Harapannya sistem ini dapat membantu meningkatkan kesehatan dan produktivitas tanaman padi Anda.
+Terima kasih telah menggunakan PaddyCare! Harapannya sistem ini dapat membantu meningkatkan kesehatan dan produktivitas tanaman padi Anda. 2024
